@@ -1,5 +1,5 @@
-cpu <- read.csv("C:/Users/EmChes/OneDrive - wtpvf/Desktop/zdfg/cpu_time.csv")
-cpu <- read.csv("C:/Users/EmChes/OneDrive - wtpvf/Desktop/zdfg/cpu_time.csv", header = TRUE, colClasses = c("factor", "factor", "numeric","numeric", "numeric", "numeric", "numeric", "numeric","numeric", "numeric", "numeric", "numeric", "numeric", "numeric"), fileEncoding='UTF-8-BOM')
+cpu <- read.csv("C:/Your/Path/To/The/csv/file")
+cpu <- read.csv("C:/Your/Path/To/The/csv/file", header = TRUE, colClasses = c("factor", "factor", "numeric","numeric", "numeric", "numeric", "numeric", "numeric","numeric", "numeric", "numeric", "numeric", "numeric", "numeric"), fileEncoding='UTF-8-BOM')
 summary(cpu)
 par(mfrow=c(2,3))
 hist(cpu$CACH[cpu$vendor.name=="amd"], xlab="amdahl" ,main="")
